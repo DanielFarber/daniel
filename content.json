@@ -1,0 +1,35 @@
+{
+  "index": {
+    "first": "extend ./views/layout.jade\nblock content\n\n\tp.home_text\n\t\t| ",
+    "refresh": "p.home_text\n\t| ",
+    "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc et urna eu elit porttitor congue. In ullamcorper elit eu malesuada sodales. Nam vitae sapien sed felis blandit euismod. Curabitur ligula justo, tincidunt eget tellus a, ultrices ultrices ligula. Proin ullamcorper pellentesque pretium. Phasellus fermentum metus blandit nunc faucibus venenatis. Morbi ut metus convallis, semper risus in, molestie enim. Etiam sit amet dictum libero. Suspendisse eu enim rhoncus, pellentesque diam eu, semper sapien. Morbi at odio quis massa rhoncus aliquet. Morbi sollicitudin pellentesque augue vitae suscipit. Phasellus id tempor sapien."
+  },
+  "about": {
+  	"el": "p Select from the list of categories to see submissions to 500px."
+  },
+  "categories": {
+    "list": [
+      "tree",
+      "lieutenant",
+      "basalt",
+      "metronome",
+      "hangar",
+      "campfire",
+      "ventricle",
+      "armature",
+      "panna cotta",
+      "montenegro"
+    ],
+    "listItemEl": "ul\n\teach item in items\n\t\tli.category\n\t\t\tspan.list_text=item"
+  },
+  "category": {
+    "imageEl": "span.selection\n\ta(target='_blank' href='http://500px.com#{imgLink}')\n\t\timg(src='#{thumbnailLink}')"
+  },
+  "api": {
+    "url": "https://api.500px.com/v1/photos/search?rpp=100&consumer_key=4LLVSx2POmLxsIrOP7MAFllpsMfpMLtZbP0iEs2j&term="
+  },
+  "stylesheets": {
+    "reset": "html, body {\n\tborder: 0;\n\tfont-family: \"Helvetica-Neue\", \"Helvetica\", Arial, sans-serif;\n\tline-height: 1.5;\n\tmargin: 0;\n\tpadding: 0;\n}\n \ndiv, span, object, iframe, img, table, caption, thead, tbody,\ntfoot, tr, tr, td, article, aside, canvas, details, figure, hgroup, menu,\nnav, footer, header, section, summary, mark, audio, video {\n  border: 0;\n  margin: 0;\n  padding: 0;\n}\n \nh1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, address, cit, code,\ndel, dfn, em, ins, q, samp, small, strong, sub, sup, b, i, hr, dl, dt, dd,\nol, ul, li, fieldset, legend, label {\n  border: 0;\n  font-size: 100%;\n  vertical-align: baseline;\n  margin: 0;\n  padding: 0;\n}\n \narticle, aside, canvas, figure, figure img, figcaption, hgroup,\nfooter, header, nav, section, audio, video {\n\tdisplay: block;\n}\n \ntable {\n  border-collapse: separate;\n  border-spacing: 0;\n  caption, th, td {\n    text-align: left;\n    vertical-align: middle;\n  }\n}\n \na img {\n  border: 0;\n}\n \n:focus {\n  outline: 0;\n}",
+    "style": "body {\n\tfont-family: Georgia;\n}\n\nheader {\n\tbackground-color: #3BB365;\n\tcolor: white;\n\tpadding: 25px;\n\theight: 80px;\n\tfont-size: 40px;\n\ttext-align: center;\n}\n\n.container {\n\theight: 500px;\n}\n\n.sidebar {\n\tfloat: left;\n\twidth: 10%;\n}\n\n.main-content {\n\tfont-size: 25px;\n\tfloat: left;\n\twidth: 85%;\n\tpadding-left: 15px;\n\theight: 500px;\n\toverflow: auto;\n}\n\nli {\n\tlist-style: none;\n}\n\n.list_text:hover {\n\tcursor: pointer;\n\tcolor: red;\n}"
+  }
+}
